@@ -13,13 +13,16 @@
 <body>
     <div id="p5Canvas" onclick="mapEvent"></div>
     <div class="informatics"> 
-        <div class="options"><label for="cars">Choose a car:</label>
+        <div class="options" >
+            <label for="state">Choose a state:</label>
 
-<select id="states">
-  <option value="volvo">Volvo</option>
+            <select id="state" onchange="handleState(this)">
+            </select>
+        </div>
+        <div class = "info">
 
-</select></div>
-        <canvas class="line-graph"></canvas>
+        </div>
+        <!-- <canvas class="line-graph"></canvas> -->
     </div>
      <script language="javascript" type="text/javascript" src="global.js"></script>
      <script language="javascript" type="text/javascript" src="./data/states.js"></script>

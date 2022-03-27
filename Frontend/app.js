@@ -48,6 +48,7 @@ function mercY(lat) {
   return a * c;
 }
 
+const stateOptions = document.querySelector("#state");
 async function setup() {
   await getData();
   colorMode(HSB);
@@ -61,7 +62,9 @@ async function setup() {
   var cx = mercX(clon);
   var cy = mercY(clat);
   let i = 0;
+
   for (state in statesData) {
+    stateOptions.innerHTML += `<option value="${state}">${state}</option>`;
     var lat = statesData[state]["latitude"];
     var lon = statesData[state]["longitude"];
     console.log(data[i]);
