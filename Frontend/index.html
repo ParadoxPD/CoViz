@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' /> -->
+    <link href='./style.css' rel='stylesheet' /> 
+ 
+</head>
+
+<body>
+    <div id="p5Canvas" onclick="mapEvent"></div>
+    <div class="informatics"> 
+        <div class="options"><label for="cars">Choose a car:</label>
+
+<select id="states">
+  <option value="volvo">Volvo</option>
+
+</select></div>
+        <canvas class="line-graph"></canvas>
+    </div>
+     <script language="javascript" type="text/javascript" src="global.js"></script>
+     <script language="javascript" type="text/javascript" src="./data/states.js"></script>
+     <script language="javascript" type="text/javascript" src="eventHandler.js"></script>
+     <script language="javascript" type="text/javascript" src="dataLoader.js"></script>
+     <script language="javascript" type="text/javascript" src="app.js"></script>
+     <script language="javascript" type="text/javascript" src="graph.js"></script>
+
+</body>
+</html>                                  
